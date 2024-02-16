@@ -1,0 +1,118 @@
+.App{
+    background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+
+.iconContainer{
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+.paperButton{
+    grid-row: 7/10;
+    grid-column: 7/11;
+    margin: 30px;
+    z-index: 1;
+    background-image: linear-gradient( hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+}
+
+.scissorsButton{
+    grid-row: 1/10;
+    grid-column: 9/13;
+    margin: 30px;
+    z-index: 1;
+    background-image: linear-gradient( hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+}
+
+.rockButton{
+    grid-row: 1/6;
+    grid-column: 5/9;
+    margin: 30px;
+    z-index: 2;
+    background-image: linear-gradient( hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+}
+
+.bgTriangle{
+    grid-row: 5/7;
+    grid-column: 7/11;
+    transform: scale(120%);
+
+}
+
+.yourDisplay{
+    grid-row: 2/7;
+    grid-column: 3/8;
+    margin: 30px;
+    z-index: 1;
+}
+
+.houseDisplay{
+    grid-row: 2/7;
+    grid-column: 10/15;
+    margin: 30px;
+    z-index: 1;
+}
+
+.youWin{
+    grid-row: 3/10;
+    grid-column: 7/11;
+    z-index: 2;
+}
+
+.youWinLeft{
+    grid-row: 2/7;
+    grid-column: 2/7;
+    margin: 30px;
+    z-index: 1;
+}
+
+.youWinRight{
+    grid-row: 2/7;
+    grid-column: 11/16;
+    margin: 30px;
+    z-index: 1;
+}
+
+.appear{
+    display: flex !important;
+    z-index: 2;
+}
+
+@media (max-width: 600px) {
+    .iconContainer{
+        display: grid;
+        grid-template-columns: repeat(15, 17.5px);
+        grid-template-rows: repeat(15, 17.5px);
+    }
+
+    .paperButton{
+        grid-row: 8/11;
+        grid-column: 5/12;
+        margin: 0;
+        z-index: 1;
+        background-image: linear-gradient( hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+    }
+    
+    .scissorsButton{
+        grid-row: 1/6;
+        grid-column: 9/16;
+        margin: 0;
+        z-index: 1;
+        background-image: linear-gradient( hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+    }
+    
+    .rockButton{
+        grid-row: 1/6;
+        grid-column: 1/8;
+        margin: 0;
+        z-index: 2;
+        background-image: linear-gradient( hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+    }
+
+    .bgTriangle{
+        grid-row: 6/8;
+        grid-column: 6/11;
+        transform: scale(220%);
+    
+    }
+}
