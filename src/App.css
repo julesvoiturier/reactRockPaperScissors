@@ -2,6 +2,11 @@
     background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
 }
 
+.filterBrightness{
+    filter: brightness(0%);
+    opacity: 100%;
+}
+
 .iconContainer{
     display: grid;
     grid-template-columns: repeat(16, 1fr);
@@ -86,6 +91,8 @@
 
     .iconContainer{
         display: grid;
+        margin: 0;
+        width: 260px !important;
         margin-top: 50px !important;
         height: 300px !important;
         grid-template-columns: repeat(15, 17.5px);

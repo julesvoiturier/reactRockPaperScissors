@@ -50,6 +50,7 @@ function App() {
   let choiceFunction = (x) => {
 
     setChoice(x)
+
     console.log(choice);
     setHouseDisplay(true)
 
