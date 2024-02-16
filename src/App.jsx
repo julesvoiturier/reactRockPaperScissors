@@ -128,7 +128,7 @@ function App() {
   //! APP JSX RETURN
   return (
     <div className='App w-screen h-[101vh] max-sm:h-[700px] '>
-      <div className='w-full h-full flex items-center justify-start flex-col p-12'>
+      <div className='w-full h-full flex items-center justify-start flex-col p-12 max-sm:justify-center'>
 
         <TopBar points={points} Title={Title}/>
 

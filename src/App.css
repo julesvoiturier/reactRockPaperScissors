@@ -79,8 +79,15 @@
 }
 
 @media (max-width: 600px) {
+
+    .App{
+        height: 100VH !important;
+    }
+
     .iconContainer{
         display: grid;
+        margin-top: 50px !important;
+        height: 300px !important;
         grid-template-columns: repeat(15, 17.5px);
         grid-template-rows: repeat(15, 17.5px);
     }
@@ -113,6 +120,25 @@
         grid-row: 6/8;
         grid-column: 6/11;
         transform: scale(220%);
-    
+    }
+
+    .youWin{
+        grid-row: 11/15;
+        grid-column: 1/16;
+        z-index: 2;
+    }
+
+    .youWinLeft{
+        grid-row: 1/6;
+        grid-column: 1/8;
+        margin: 0;
+        z-index: 2;
+    }
+
+    .youWinRight{
+        grid-row: 1/6;
+        grid-column: 9/16;
+        margin: 0;
+        z-index: 1;
     }
 }
